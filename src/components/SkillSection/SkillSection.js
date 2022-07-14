@@ -17,12 +17,12 @@ export default function SkillSection() {
           <Col xs={12}>
             <h1
               css={styles.bigText}
-              className="fw-bold mt-4 mb-5 text-uppercase"
+              className="fw-bold  my-5 text-uppercase border-start border-5 border-primary px-5"
             >
               Technical Skills&nbsp;
               <FontAwesomeIcon
                 icon={faCode}
-                style={{ fontSize: 120, color: "#3e00af" }}
+                style={{ fontSize: 120, color: "#0d6efd" }}
               />
             </h1>
           </Col>
@@ -32,56 +32,56 @@ export default function SkillSection() {
                 <h3 className="col-sm-6 fw-bold">
                   <FontAwesomeIcon
                     icon={faPlus}
-                    style={{ fontSize: 25, color: "#3e00af" }}
+                    style={{ fontSize: 25, color: "#0d6efd" }}
                   />
                   &nbsp;Html
                 </h3>
                 <h3 className="col-sm-6 fw-bold">
                   <FontAwesomeIcon
                     icon={faPlus}
-                    style={{ fontSize: 25, color: "#3e00af" }}
+                    style={{ fontSize: 25, color: "#0d6efd" }}
                   />
                   &nbsp;Css
                 </h3>
                 <h3 className="col-sm-6 fw-bold">
                   <FontAwesomeIcon
                     icon={faPlus}
-                    style={{ fontSize: 25, color: "#3e00af" }}
+                    style={{ fontSize: 25, color: "#0d6efd" }}
                   />
                   &nbsp;Scss
                 </h3>
                 <h3 className="col-sm-6 fw-bold">
                   <FontAwesomeIcon
                     icon={faPlus}
-                    style={{ fontSize: 25, color: "#3e00af" }}
+                    style={{ fontSize: 25, color: "#0d6efd" }}
                   />
                   &nbsp;EmotionJS
                 </h3>
                 <h3 className="col-sm-6 fw-bold">
                   <FontAwesomeIcon
                     icon={faPlus}
-                    style={{ fontSize: 25, color: "#3e00af" }}
+                    style={{ fontSize: 25, color: "#0d6efd" }}
                   />
                   &nbsp;Bootstrap
                 </h3>
                 <h3 className="col-sm-6 fw-bold">
                   <FontAwesomeIcon
                     icon={faPlus}
-                    style={{ fontSize: 25, color: "#3e00af" }}
+                    style={{ fontSize: 25, color: "#0d6efd" }}
                   />
                   &nbsp;JavaScript
                 </h3>
                 <h3 className="col-sm-6 fw-bold">
                   <FontAwesomeIcon
                     icon={faPlus}
-                    style={{ fontSize: 25, color: "#3e00af" }}
+                    style={{ fontSize: 25, color: "#0d6efd" }}
                   />
                   &nbsp;ReactJS
                 </h3>
                 <h3 className="col-sm-6 fw-bold">
                   <FontAwesomeIcon
                     icon={faPlus}
-                    style={{ fontSize: 25, color: "#3e00af" }}
+                    style={{ fontSize: 25, color: "#0d6efd" }}
                   />
                   &nbsp;NextJS
                 </h3>

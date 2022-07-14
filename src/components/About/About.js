@@ -20,7 +20,7 @@ export default function About() {
           <Row>
             <Col className=" py-5" md={6}>
               <h1
-                className="text-uppercase fw-bold text-end mb-5"
+                className="text-uppercase fw-bold  text-end mb-5"
                 css={styles.bigText}
               >
                 About
@@ -40,7 +40,7 @@ export default function About() {
               </div>
             </Col>
             <Col className=" py-5" md={6}>
-              <h1 className="text-uppercase  fw-bold mb-5" css={styles.bigText}>
+              <h1 className="text-uppercase  fw-bold  mb-5" css={styles.bigText}>
                 <br />
                 Me
               </h1>

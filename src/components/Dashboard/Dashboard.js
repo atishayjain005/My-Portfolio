@@ -27,7 +27,7 @@ export default function Dashboard() {
               />
               {/* <BsArrowDown  size={150} /> */}
             </h4>
-            <h4 className="col-md-4 py-4 d-flex align-items-end fw-bold ">
+            <h4 className="col-md-4 py-4 d-flex align-items-end fw-bold  ">
               I SUPPORT DESIGNERS AND AGENCIES WITH CREATVE DEVELOPMENT
             </h4>
             <h1 css={styles.bigText} className="col-md-6 text-end fw-bold">
