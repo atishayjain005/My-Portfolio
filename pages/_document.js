@@ -1,4 +1,4 @@
-import { Html, Head, Main, NextScript, Script } from "next/document";
+import { Html, Head, Main, NextScript } from "next/document";
 
 export default function Document() {
   return (
@@ -8,10 +8,10 @@ export default function Document() {
           href="https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500,400&display=swap"
           rel="stylesheet"
         />
-        {/* <Script
-          src="https://kit.fontawesome.com/aaef485466.js"
-          crossOrigin="anonymous"
-        ></Script> */}
+        <link
+          href="https://api.fontshare.com/v2/css?f[]=kalam@700,400,300&display=swap"
+          rel="stylesheet"
+        />
       </Head>
       <body>
         <Main />

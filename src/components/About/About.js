@@ -2,6 +2,22 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import * as styles from "./About.styles";
+import { faQuoteLeft, faQuoteRight } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+const data = {
+  main: "In cillum labore velit incididunt anim est id Minim enim eiusmod labore qui incididunt commodo reprehenderit. Ad est ipsum irure exercitation tempor est id ea dolor consequat ut quis voluptate dolore. Officia aliqua exercitation ullamco amet.",
+  subData: [
+    {
+      content:
+        "Dolore nostrud excepteur dolore enim. In labore velit ut pariatur. Anim ipsum aliquip anim Lorem excepteur. Proident ullamco dolor nostrud reprehenderit. Nulla nisi proident deserunt ex commodo aliquip est non eiusmod nulla reprehenderit nisi ut adipisicing.",
+    },
+    {
+      content:
+        "Commodo exercitation ea nisi sint. Labore cillum mollit ea esse cupidatat proident esse dolore deserunt eu. Non labore magna tempor duis est anim eu nulla quis ad sint qui veniam nisi. Id incididunt id ut quis dolor reprehenderit id aute exercitation. Elit reprehenderit sunt quis tempor deserunt consectetur exercitation non aliquip. Et excepteur excepteur do exercitation ex fugiat eiusmod.",
+    },
+  ],
+};
 
 export default function About() {
   return (
@@ -15,47 +31,32 @@ export default function About() {
           ></path>
         </svg>
       </div>
-      <div css={styles.wrapper}>
+      <div css={styles.wrapper} className="py-5" id="about">
         <Container>
           <Row>
-            <Col className=" py-5" md={6}>
+            <Col className=" py-5">
               <h1
-                className="text-uppercase fw-bold  text-end mb-5"
                 css={styles.bigText}
+                className="text-uppercase text-center fw-bold"
               >
-                About
+                About Me
               </h1>
-              <div>
-                <h4 className="card bg-dark text-light  fw-light h-50 p-5">
-                  Magna adipisicing esse ipsum magna in. Do laboris aliquip elit
-                  est id in non amet duis cillum sint culpa ipsum cupidatat.
-                  Cupidatat ea dolor consequat labore commodo ad exercitation
-                  ipsum consectetur sint aliqua aliqua id culpa. Id pariatur
-                  excepteur enim ipsum nisi elit. Minim est duis labore fugiat
-                  exercitation irure enim pariatur. Labore aliqua culpa amet
-                  nostrud ipsum ipsum nisi. Duis laborum sit magna cupidatat
-                  nulla cupidatat aute enim veniam aliqua irure pariatur do
-                  reprehenderit.
-                </h4>
+              <div className="py-5">
+                <h1 className="fw-light" css={styles.cursiveText}>
+                  <FontAwesomeIcon icon={faQuoteLeft} />
+                  &nbsp;&nbsp;{data.main}&nbsp;&nbsp;
+                  <FontAwesomeIcon icon={faQuoteRight} />
+                </h1>
               </div>
-            </Col>
-            <Col className=" py-5" md={6}>
-              <h1 className="text-uppercase  fw-bold  mb-5" css={styles.bigText}>
-                <br />
-                Me
-              </h1>
-              <div>
-                <h4 className="card bg-dark text-light  fw-light h-50 p-5">
-                  Magna adipisicing esse ipsum magna in. Do laboris aliquip elit
-                  est id in non amet duis cillum sint culpa ipsum cupidatat.
-                  Cupidatat ea dolor consequat labore commodo ad exercitation
-                  ipsum consectetur sint aliqua aliqua id culpa. Id pariatur
-                  excepteur enim ipsum nisi elit. Minim est duis labore fugiat
-                  exercitation irure enim pariatur. Labore aliqua culpa amet
-                  nostrud ipsum ipsum nisi. Duis laborum sit magna cupidatat
-                  nulla cupidatat aute enim veniam aliqua irure pariatur do
-                  reprehenderit.
-                </h4>
+              <div className="row gap-5 justify-content-evenly py-5 ">
+                {data.subData.map((cntnt, index) => (
+                  <div
+                    key={index}
+                    className="card col-sm shadow-lg p-5 rounded-3"
+                  >
+                    {cntnt.content}
+                  </div>
+                ))}
               </div>
             </Col>
           </Row>

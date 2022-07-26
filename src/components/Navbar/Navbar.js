@@ -1,7 +1,20 @@
 /** @jsxImportSource @emotion/react */
 import React from "react";
-import * as styles from "./Navbar.styles.js";
+
 import { Container, Row, Col } from "react-bootstrap";
+
+import * as styles from "./Navbar.styles.js";
+
+const data = {
+  name: "Atishay Jain",
+  work: "Currently Freelance Frontend Developer",
+  location: "Based in Bengluru and Bhopal",
+  links: [
+    { link: "Home,", href: "#home" },
+    { link: "About,", href: "#about" },
+    { link: "Contact", href: "#contact" },
+  ],
+};
 
 export default function Navbar() {
   return (
@@ -9,24 +22,25 @@ export default function Navbar() {
       <Container>
         <Row className="py-4 gap-5">
           <Col>
-            <h5 className="fw-bold">Atishay Jain</h5>
+            <h5 className="fw-bold">{data.name}</h5>
           </Col>
           <Col>
-            <h5 className="fw-bold">Currently Freelance Frontend Developer</h5>
+            <h5 className="fw-bold">{data.work}</h5>
           </Col>
           <Col>
-            <h5 className="fw-bold">Based in Bengluru and Bhopal</h5>
+            <h5 className="fw-bold">{data.location}</h5>
           </Col>
           <Col className="text-end">
-            <a className="h5" css={styles.anchor} href="#">
-              Home,&nbsp;
-            </a>
-            <a className="h5" css={styles.anchor} href="#">
-              About,&nbsp;
-            </a>
-            <a className="h5" css={styles.anchor} href="#">
-              Contact
-            </a>
+            {data.links.map((li) => (
+              <a
+                key={li.link}
+                className="h5 "
+                css={styles.anchor}
+                href={li.href}
+              >
+                {li.link}&nbsp;
+              </a>
+            ))}
           </Col>
         </Row>
       </Container>

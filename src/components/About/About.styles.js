@@ -12,3 +12,7 @@ export const bigText = css`
 export const blocks = css`
   background-color: #e0dfdd;
 `;
+
+export const cursiveText = css`
+  ${'' /* font-family: Kalam, cursive; */}
+`;
